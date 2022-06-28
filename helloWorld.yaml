@@ -1,5 +1,5 @@
 - name: testDir sample
-  hosts: all
+  hosts: 127.0.0.1
   tasks:
     - name: playbook dir
       debug:
@@ -7,3 +7,5 @@
     - name: testing Debug
       debug:
         msg: "testing Debug"
+    - name:
+      ping: 
