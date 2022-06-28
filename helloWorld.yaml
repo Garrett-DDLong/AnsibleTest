@@ -3,4 +3,5 @@
   tasks:
     - name: playbook dir
       debug:
-        msg:'{{playbook_dir}}'
+        msg: "This is a test"
+        msg:"{{playbook_dir}}"
