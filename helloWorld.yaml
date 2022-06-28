@@ -7,5 +7,5 @@
     - name: testing Debug
       debug:
         msg: "testing Debug"
-    - name:
-      ping: 
+    - name: ping device
+      ansible.builtin.ping:
