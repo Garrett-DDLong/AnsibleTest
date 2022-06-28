@@ -4,5 +4,6 @@
   tasks:
     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       copy:
-        content: hello worldn
-        dest: ~/tmp/testfile.txt
+        content: hello world
+        dest: /tmp/testfile.txt
+    - role: '{{playbook_dir}}'
