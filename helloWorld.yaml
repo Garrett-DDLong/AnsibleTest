@@ -1,5 +1,5 @@
 - name: testDir sample
-  hosts: 127.0.0.1
+  hosts: admin@127.0.0.1
   tasks:
     - name: playbook dir
       debug:
