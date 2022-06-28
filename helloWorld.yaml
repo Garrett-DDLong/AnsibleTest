@@ -3,6 +3,7 @@
   tasks:
     - name: playbook dir
       debug:
-        msg: "This is a test"
-      debug:
         msg: "{{playbook_dir}}"
+    - name: testing Debug
+      debug:
+        msg: "testing Debug"
