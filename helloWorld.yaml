@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: testDir sample
   hosts: all
   tasks:
     - name: playbook dir
