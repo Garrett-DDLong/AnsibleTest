@@ -1,5 +1,5 @@
 - name: testDir sample
-  hosts: "newdev_0"
+  hosts: all
   tasks:
     - name: playbook dir
       debug:
