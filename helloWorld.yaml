@@ -6,4 +6,5 @@
       copy:
         content: hello world
         dest: /tmp/testfile.txt
-    - role: '{{playbook_dir}}'
+        debug:
+          msg:'{{playbook_dir}}'
