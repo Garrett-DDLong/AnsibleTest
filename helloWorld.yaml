@@ -9,11 +9,11 @@
     - name: testing Debug
       debug:
         msg: "testing Debug"
-  
-    - name: config netsim #second task
+        
+      #second task
       hosts: 127.0.0.1
       tasks:
-    - name: Configure a device
+      - name: Configure a device
       cisco.iosxr.iosxr_interfaces:
        config:
        - name: GigabitEthernet0/0/0/2
