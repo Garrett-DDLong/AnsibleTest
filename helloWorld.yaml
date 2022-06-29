@@ -9,7 +9,7 @@
     - name: testing Debug
       debug:
         msg: "testing Debug"
-        
+    - name: whyyyy
       #second task
       hosts: 127.0.0.1
       tasks:
