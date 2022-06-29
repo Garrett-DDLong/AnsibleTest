@@ -1,6 +1,6 @@
 ---
 - name: testDir sample
-  hosts: all
+  hosts: 127.0.0.1
   connection: local
   tasks:
     - name: playbook dir
@@ -10,7 +10,8 @@
       debug:
         msg: "testing Debug"
   
-    - name: config netsim
+    - name: config netsim #second task
+      hosts: 127.0.0.1
       tasks:
     - name: Configure a device
       cisco.iosxr.iosxr_interfaces:
