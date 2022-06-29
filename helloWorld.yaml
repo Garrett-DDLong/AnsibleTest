@@ -10,3 +10,13 @@
         msg: "testing Debug"
     - name: ping device
       ansible.builtin.ping:
+   cisco.iosxr.iosxr_interfaces:
+    config:
+    - name: GigabitEthernet0/0/0/2
+      description: Configured by Ansible
+      enabled: true
+    - name: GigabitEthernet0/0/0/3
+      description: Configured by Ansible Network
+      enabled: false
+      duplex: full
+    state: merged
