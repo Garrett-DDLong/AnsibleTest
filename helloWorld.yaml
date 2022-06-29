@@ -1,5 +1,6 @@
 - name: testDir sample
   hosts: 127.0.0.1
+  connection: local
   tasks:
     - name: playbook dir
       debug:
