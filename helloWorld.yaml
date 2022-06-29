@@ -1,26 +1,25 @@
 ---
 - name: testDir sample
   hosts: 127.0.0.1
+  become: no
   connection: local
   tasks:
-    - name: playbook dir
+    - name: playbook dir print
       debug:
         msg: "{{playbook_dir}}"
-    - name: testing Debug
-      debug:
-        msg: "testing Debug"
-    - name: whyyyy
       #second task
-      hosts: 127.0.0.1
-      tasks:
+- name: Configure netsim
+  hosts: 127.0.0.1
+  become: no
+  tasks:
       - name: Configure a device
-      cisco.iosxr.iosxr_interfaces:
-       config:
-       - name: GigabitEthernet0/0/0/2
-         description: Configured by Ansible
-         enabled: true
-       - name: GigabitEthernet0/0/0/3
-         description: Configured by Ansible Network
-         enabled: false
-         duplex: full
-       state: merged
+        cisco.iosxr.iosxr_interfaces:
+        config:
+        - name: GigabitEthernet0/0/0/2
+          description: Configured by Ansible
+          enabled: true
+        - name: GigabitEthernet0/0/0/3
+          description: Configured by Ansible Network
+          enabled: false
+          duplex: full
+        state: merged
