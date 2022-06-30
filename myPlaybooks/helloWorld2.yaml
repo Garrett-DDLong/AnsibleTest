@@ -2,7 +2,7 @@
 - name: testDir sample
   hosts: 127.0.0.1
   gather_facts: no
-  ansible_network_cli_ssh_type: libssh
+  #ansible_network_cli_ssh_type: libssh
   connection: local
   tasks:
     - name: playbook dir print
