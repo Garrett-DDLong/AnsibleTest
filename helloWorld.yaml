@@ -7,6 +7,11 @@
     - name: playbook dir print
       debug:
         msg: "{{playbook_dir}}"
+    - name: Find out playbook's path
+      shell: pwd
+      register: playbook_path_output
+    - debug: 
+        msg: var=playbook_path_output
       #second task
 #- name: Configure netsim
  # hosts: 127.0.0.1
