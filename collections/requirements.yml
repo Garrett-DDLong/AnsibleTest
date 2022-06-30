@@ -1,1 +1,5 @@
-
+---
+collections:
+  - name: https://github.com/ansible-collections/cisco.iosxr
+    type: git
+    version: latest
