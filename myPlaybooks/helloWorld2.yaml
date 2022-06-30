@@ -13,9 +13,6 @@
       register: playbook_path_output
     - debug: var=playbook_path_output.stdout
 
-    - name: run show interface command
-      ansible.netcommon.cli_command:
-       command: show interfaces
       #second task
 - name: Configure netsim
   hosts: 127.0.0.1
