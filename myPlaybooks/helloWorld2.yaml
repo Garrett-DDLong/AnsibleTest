@@ -1,7 +1,6 @@
 ---
 - name: testDir sample
   hosts: 127.0.0.1
-  become: no
   gather_facts: no
   connection: local
   tasks:
