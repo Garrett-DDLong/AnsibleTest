@@ -9,5 +9,5 @@ collections:
     version: '0.4.0'
 
   - name: https://github.com/ansible-collections/cisco.iosxr
-    #type: git
+    type: git
     version: '3.2.0'
