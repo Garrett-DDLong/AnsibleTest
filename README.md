@@ -29,7 +29,8 @@ AWX was installed useing https://github.com/ansible/awx-operator#purpose and the
 
 
 
-The error I keep on getting is:
+The errors I keep on getting are:
+
 ERROR! Neither the collection requirement entry key 'name', nor 'source' point to a concrete resolvable collection 
 artifact. Also 'name' is not an FQCN. A valid collection name must be in the format <namespace>.<collection>. Please 
 make sure that the namespace and the collection name  contain characters from [a-zA-Z0-9_] only.
@@ -39,5 +40,9 @@ Tip: Make sure you are pointing to the right subdirectory —
   11070hu3hvfh2/tmpv8s4bwl3/pylibsshoyxroiig`
 looks like a directory but it is neither a collection, nor a namespace dir.
 
+Useful links: 
 
 The documentation for awx can be found at https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html#
+
+  https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/libssh_connection.html
+  
