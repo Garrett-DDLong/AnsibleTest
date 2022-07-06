@@ -1,4 +1,9 @@
 # AnsibleTest
+Description:
+The purpose of this repo is to create a project where I can run some simple ansible playbooks in an attempt to lean 
+how to use AWX and how it can be useful to data ductus. I hope to configure a netsim and learn the ins and outs of
+AWX
+
 
 File contents:
 
@@ -29,5 +34,10 @@ ERROR! Neither the collection requirement entry key 'name', nor 'source' point t
 artifact. Also 'name' is not an FQCN. A valid collection name must be in the format <namespace>.<collection>. Please 
 make sure that the namespace and the collection name  contain characters from [a-zA-Z0-9_] only.
 
-Tip: Make sure you are pointing to the right subdirectory — `/var/lib/awx/projects/.__awx_cache/_8__testproject/stage/tmp/ansible-local-11070hu3hvfh2/tmpv8s4bwl3/pylibsshoyxroiig`
+Tip: Make sure you are pointing to the right subdirectory — 
+  `/var/lib/awx/projects/.__awx_cache/_8__testproject/stage/tmp/ansible-local-
+  11070hu3hvfh2/tmpv8s4bwl3/pylibsshoyxroiig`
 looks like a directory but it is neither a collection, nor a namespace dir.
+
+
+The documentation for awx can be found at https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html#
