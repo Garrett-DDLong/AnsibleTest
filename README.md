@@ -44,5 +44,6 @@ Useful links:
 
 The documentation for awx can be found at https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html#
 
-  https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/libssh_connection.html
+Ansible - https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/libssh_connection.html
   
+Ansible galaxy -  https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file
