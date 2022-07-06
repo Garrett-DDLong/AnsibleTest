@@ -3,11 +3,4 @@ roles:
   - name: cisco_iosxr
     version: 2.7.1
 
-collections:
-  - name: https://github.com/ansible/pylibssh
-    type: git
-    version: '0.4.0'
 
-  - name: https://github.com/ansible-collections/cisco.iosxr
-    type: git
-    version: '3.2.0'
