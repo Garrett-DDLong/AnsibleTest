@@ -4,7 +4,6 @@ collections:
     type: git
     version: 3.2.0
     
-  - name: https://github.com/ansible/pylibssh
-    type: git
-    version: 0.4.0
-    #name: pylibssh
+#  - name: https://github.com/ansible/pylibssh
+ #   type: git
+  #  version: 0.4.0
