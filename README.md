@@ -22,6 +22,9 @@ helloWorld2.yaml - Contains 2 plays the first will do some simple things like pr
 is attempting to ssh and confgure a netsim.
 
 
+Kustomization.yaml - Part of the install. Used to make awx run. Need to update if a new version of operator. 
+
+
 
 Install:
 
