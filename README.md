@@ -42,6 +42,9 @@ Tip: Make sure you are pointing to the right subdirectory —
   `/var/lib/awx/projects/.__awx_cache/_8__testproject/stage/tmp/ansible-local-
   11070hu3hvfh2/tmpv8s4bwl3/pylibsshoyxroiig`
 looks like a directory but it is neither a collection, nor a namespace dir.
+  
+  Possible formating fix:
+  https://github.com/ansible/ansible/pull/69154
 
 Useful links: 
 
