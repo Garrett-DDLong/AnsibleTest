@@ -1,8 +1,4 @@
 ---
-roles:
-  - name: cisco_iosxr
-    version: 2.7.1
-
 #collections:
  # -name:  git@github.com:
   #- name: https://github.com/ansible/pylibssh
