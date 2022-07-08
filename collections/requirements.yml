@@ -1,9 +1,9 @@
 ---
 collections:
-  - name: https://git@github.com:ansible/pylibssh.git
+  - name: https://git@github.com/ansible/pylibssh.git
     type: git
     version: '0.4.0'
 
-  - name: https://git@github.com:ansible-collections/cisco.iosxr
+  - name: https://git@github.com/ansible-collections/cisco.iosxr
     type: git
     version: '3.2.0'
