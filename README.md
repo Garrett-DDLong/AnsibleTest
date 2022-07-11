@@ -20,8 +20,6 @@ If on mac can use the bash file locaed in `/install/installMac`
 AWX will be containerized in this repo soon but is not yet. Look to awx-operator to install in your spesific os:
 https://github.com/ansible/awx-operator#purpose 
 
-  Possible formating fix:
-  https://github.com/ansible/ansible/pull/69154
   
 # Steps to run hello world example
  1. Login to AWX using the user name and password provided when installed. Default username is admin and password can be obtained by running the command 
