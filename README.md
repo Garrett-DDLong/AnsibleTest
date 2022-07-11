@@ -1,55 +1,46 @@
 # AnsibleTest
-Description:
+
+
+# Description
 The purpose of this repo is to create a project where I can run some simple ansible playbooks in an attempt to lean 
-how to use AWX and how it can be useful to data ductus. I hope to configure a netsim and learn the ins and outs of
+how to use AWX and how it can be useful to data ductus. I hope to configure a netsim using an ansible playbook and learn the ins and outs of
 AWX
 
-
-File contents:
-
-Colletions - Collections is a required folder that contains requirements.yml
-
-requirements.yml - This file contains dependances that need to be installed for the project to run in AWX
-AWX will look for the directory collections/requirements.yml for this file. If this file does not work then
-the project wont sync and nothing will work. Documentation for this format can be seen here: 
-https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file
+# Table of contents
+1) <a href="#AWX Install">AWX Install</a>
+2) <a href="#Steps to run hello world example">Steps to run hello world example</a>
+3) <a href="#Other resources">Other resources</a>
 
 
 
-myPlaybooks - Contains playbooks that will be used. In awx a playbooks can be selected for each project to run.
+## <div id="AWX Install">AWX Install</div>
 
-helloWorld2.yaml - Contains 2 plays the first will do some simple things like printing the PWD. The second play 
-is attempting to ssh and confgure a netsim.
+If on mac can use the bash file locaed in `/install/installMac`
 
+AWX will be containerized in this repo soon but is not yet. Look to awx-operator to install in your spesific os:
+https://github.com/ansible/awx-operator#purpose 
 
-Kustomization.yaml - Part of the install. Used to make awx run. Need to update if a new version of operator. 
-
-
-
-Install:
-
-AWX was installed useing https://github.com/ansible/awx-operator#purpose and the instructions on this page. 
-
-
-
-The errors I keep on getting are:
-
-ERROR! Neither the collection requirement entry key 'name', nor 'source' point to a concrete resolvable collection 
-artifact. Also 'name' is not an FQCN. A valid collection name must be in the format <namespace>.<collection>. Please 
-make sure that the namespace and the collection name  contain characters from [a-zA-Z0-9_] only.
-
-Tip: Make sure you are pointing to the right subdirectory — 
-  `/var/lib/awx/projects/.__awx_cache/_8__testproject/stage/tmp/ansible-local-
-  11070hu3hvfh2/tmpv8s4bwl3/pylibsshoyxroiig`
-looks like a directory but it is neither a collection, nor a namespace dir.
-  
   Possible formating fix:
   https://github.com/ansible/ansible/pull/69154
+  
+# Steps to run hello world example
+ 1. Login to AWX using the user name and password provided when installed. Default username is admin and password can be obtained by running the command 
+ `kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" | base64 --decode`
+ 
+ 2. Once in navigate to the oranizations tab and create a new organization. Give it a name and set the execution enviornment to latest
 
-Useful links: 
+ 3. Next, head over to the projects tab and give the project a name, set the oranization to the one just created, and the source control type to git. SEt the URL to this repo.
 
-The documentation for awx can be found at https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html#
+ 4. Create a new invrntory with the oranization previouldy created and give it a name.
+
+ 5. Finally create a new template. Use the inventory, project, and execution enviornment just created and set the type to run. Select the ansible playbook 'helloWorld.yaml' hit save then launch. That playbook in this repo should execute and should print hello world and the pwd. 
+
+# Other resources  
+
+The documentation for awx can be found - https://docs.ansible.com/ansible/latest/collections/awx/awx/index.html#
 
 Ansible - https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/libssh_connection.html
   
 Ansible galaxy -  https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file
+
+Possible formating fix - https://github.com/ansible/ansible/pull/69154
