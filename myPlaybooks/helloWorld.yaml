@@ -1,1 +1,15 @@
-
+---
+- name: testDir sample
+  hosts: 127.0.0.1
+  gather_facts: no
+  #ansible_network_cli_ssh_type: libssh
+  become: yes
+  connection: local
+  tasks:
+    - name: playbook dir print
+      debug:
+        msg: "{{playbook_dir}}"
+    - name: Print the gateway for each host when defined
+        ansible.builtin.debug:
+        msg: "Hello World"
+    
