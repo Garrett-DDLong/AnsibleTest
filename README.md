@@ -15,7 +15,7 @@ AWX
 
 ## <div id="AWX Install">AWX Install</div>
 
-If on mac can use the bash file locaed in `/install/installMac` Run this with 'bash startAWX.sh'
+If on mac can use the bash file locaed in `/install/installMac` Run this with `bash startAWX.sh`
 
 AWX will be containerized in this repo soon but is not yet. Look to awx-operator to install in your spesific os:
 https://github.com/ansible/awx-operator#purpose 
