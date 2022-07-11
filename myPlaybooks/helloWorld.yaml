@@ -10,6 +10,6 @@
       debug:
         msg: "{{playbook_dir}}"
     - name: Print the gateway for each host when defined
-        ansible.builtin.debug:
+      ansible.builtin.debug:
         msg: "Hello World"
     
