@@ -29,9 +29,11 @@ https://github.com/ansible/awx-operator#purpose
 
  3. Next, head over to the projects tab and give the project a name, set the oranization to the one just created, and the source control type to git. Set the URL to this repo. `Save` and click `sync`
 
- 4. Create a new invrntory with the oranization previouldy created and give it a name.
+ 4. Create a new inventory with the oranization previouldy created and give it a name.
+ 
+ 5. Create a new host using the inventory that was already created and in the varibles section spesify `ansible_connection: local`
 
- 5. Finally, create a new template. Use the inventory, project, and execution enviornment just created and set the type to run. Select the ansible playbook `helloWorld.yaml` hit `save` then `launch`. That playbook in this repo should execute and should print hello world and the pwd. 
+ 6.. Finally, create a new template. Use the inventory, project, and execution enviornment just created and set the type to run. Select the ansible playbook `helloWorld.yaml` hit `save` then `launch`. That playbook in this repo should execute and should print hello world and the pwd. If it looks like the tasks didnt run refresh the page. 
 
 # Other resources  
 
