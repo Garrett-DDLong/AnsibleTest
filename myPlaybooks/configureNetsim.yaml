@@ -12,7 +12,7 @@
 
       #second task
 - name: Configure netsim
-  hosts: 127.0.0.1
+  hosts: new_dev0
   gather_facts: no
   become: yes
   tasks:
