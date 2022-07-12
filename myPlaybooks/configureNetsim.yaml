@@ -9,10 +9,6 @@
     - name: playbook dir print
       debug:
         msg: "{{playbook_dir}}"
-    - name: Find out playbook's path
-      shell: pwd
-      register: playbook_path_output
-    - debug: var=playbook_path_output.stdout
 
       #second task
 - name: Configure netsim
