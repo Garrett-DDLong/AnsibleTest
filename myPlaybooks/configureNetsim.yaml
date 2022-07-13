@@ -1,6 +1,6 @@
 ---
 - name: testDir sample
-  hosts: 127.0.0.1
+  hosts: new_dev0
   gather_facts: no
   #ansible_network_cli_ssh_type: libssh
   become: yes
