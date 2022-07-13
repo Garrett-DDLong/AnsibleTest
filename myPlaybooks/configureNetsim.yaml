@@ -1,6 +1,6 @@
 ---
 - name: testDir sample
-  hosts: new_dev0
+  hosts: net_sims
   gather_facts: no
   #ansible_network_cli_ssh_type: libssh
   become: yes
@@ -12,7 +12,7 @@
 
       #second task
 - name: Configure netsim
-  hosts: new_dev0
+  hosts: net_sims
   gather_facts: no
   become: yes
   tasks:
