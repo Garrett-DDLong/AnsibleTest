@@ -33,7 +33,7 @@ https://github.com/ansible/awx-operator#purpose
  
  5. Create a new host using the inventory that was already created and in the varibles section spesify `ansible_connection: local`
 
- 6.. Finally, create a new template. Use the inventory, project, and execution enviornment just created and set the type to run. Select the ansible playbook `helloWorld.yaml` hit `save` then `launch`. That playbook in this repo should execute and should print hello world and the pwd. If it looks like the tasks didnt run refresh the page. 
+ 6. Finally, create a new template. Use the inventory, project, and execution enviornment just created and set the type to run. Select the ansible playbook `helloWorld.yaml` hit `save` then `launch`. That playbook in this repo should execute and should print hello world and the pwd. If it looks like the tasks didnt run refresh the page. 
 
 # Other resources  
 
