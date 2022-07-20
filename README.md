@@ -44,3 +44,5 @@ Ansible - https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/
 Ansible galaxy -  https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#install-multiple-collections-with-a-requirements-file
 
 Possible formating fix - https://github.com/ansible/ansible/pull/69154
+
+Cisco iosxr moduals documentation - https://docs.ansible.com/ansible/latest/collections/cisco/iosxr/index.html
