@@ -37,7 +37,7 @@ then
 fi
 echo "kustomize installed"
 
-echo "all dependancies installed"
+echo "all dependencies installed"
 
 #remove any old kustomization files
 #rm kustomization.yaml
