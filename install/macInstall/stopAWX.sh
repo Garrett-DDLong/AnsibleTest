@@ -2,6 +2,6 @@
 
 
 alias kubectl="minikube kubectl --"
-kubectl delete namespaces awx-operator-system
+kubectl delete namespaces awx
 kubectl delete awx awx-demo
 minikube delete 
