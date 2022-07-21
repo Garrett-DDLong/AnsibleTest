@@ -47,4 +47,4 @@ Possible formating fix - https://github.com/ansible/ansible/pull/69154
 
 Cisco iosxr moduals documentation - https://docs.ansible.com/ansible/latest/collections/cisco/iosxr/index.html
 
-Minikube-in-docler
+Minikube-in-docker https://github.com/microsoft/vscode-dev-containers/tree/main/containers/kubernetes-helm-minikube
