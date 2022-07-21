@@ -1,4 +1,9 @@
 ---
+
+roles: 
+  - name: cisco.iosxr
+    version: 3.2.0
+    
 collections:
 
   - name: https://github.com/ansible-collections/cisco.iosxr
