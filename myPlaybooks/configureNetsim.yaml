@@ -4,7 +4,7 @@
   gather_facts: no
   #ansible_network_cli_ssh_type: libssh
   become: yes
-  connection: local
+  connection: network_cli
   tasks:
     - name: playbook dir print
       debug:
